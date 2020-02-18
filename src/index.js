@@ -10,6 +10,7 @@ app.use(express.json());
 //Routes
 //app.use(require('./routes'));
 app.use('/api/movies',require('./routes/movies'));
+app.use('/api/cities',require('./routes/cities'));
 //Starting server
 app.listen(app.get('port'),() => {
     console.log("Server on port "+app.get('port'));        
